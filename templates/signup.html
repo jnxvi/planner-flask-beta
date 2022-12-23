@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Login</title>
+<link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
+{% endblock %}
+{% block content %}
+<div style="margin-top: 100px;">
+    <div class="form">
+    <h2 style="margin-top:50px; margin-bottom: 20px;">Signup</h2>
+
+        <form method="post">
+            <div class="login-input">
+                <input type="email" placeholder="Type your email" name="email" id="email" />
+
+            </div>
+            <div class="login-input ">
+                <input type="password" placeholder="Type your password" name="password" id="password" />
+
+            </div>
+            <div class="login-input ">
+                <input type="password" placeholder="Confirm your password" name="password2" id="password2" />
+
+            </div>
+            
+            <button style="background-color: #1b1c21;" class="todo-btn" type="submit">Login</button>
+
+
+        </form>
+    </div>
+
+</div>
+{% endblock %}
